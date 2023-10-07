@@ -1,0 +1,447 @@
+.logo img {
+    width: 4rem;
+    height: 2rem;
+}
+
+.logo h1 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.active {
+    color: green !important;
+}
+
+.active:hover {
+    color: rgb(4, 216, 4) !important;
+}
+
+.navbar {
+    background-color: #3c3c3c;
+    position: static;
+    z-index: 50;
+    width: 100%;
+}
+
+header .carousel .carousel-inner {
+    position: relative;
+}
+
+header .navbar .container-fluid .collapse * {
+    font-size: 1rem;
+    color: #aba8a8;
+}
+
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+header .carousel .carousel-inner .capa {
+    position: absolute;
+    background: rgba(5, 7, 12, 0.50);
+    z-index: 30 !important;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.capa .capa-contenido {
+    position: inherit;
+    width: 65%;
+    right: 1rem;
+    top: .5rem;
+    z-index: 100;
+}
+
+.capa .capa-contenido .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.capa .capa-contenido .text h2 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.capa .capa-contenido .text p {
+    color: #fff;
+    font-size: .5rem;
+}
+
+.capa .capa-contenido .botones {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+
+}
+
+.capa .capa-contenido .botones button {
+    padding: 0.5rem;
+    font-size: 0.4rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    margin: 0 2px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.capa .capa-contenido .botones button:hover {
+    background-color: white;
+    color: black;
+}
+
+.capa .capa-contenido .botones button:nth-child(2) {
+    background-color: green;
+    border: 1px solid green;
+
+}
+
+.capa .capa-contenido .botones button:nth-child(2):hover {
+    background-color: rgb(0, 150, 0);
+    color: white;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main__texto p, .footer .footer__texto p {
+    display: block;
+    font-size: 0.7rem;
+}
+
+.main .main__texto h1, .footer .footer__texto h2 {
+    font-size: 1rem;
+}
+
+.main .main__oradores {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+    gap: 20px;
+}
+
+.inf p {
+    display: inline;
+    font-size: .7rem;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 2px 3px;
+    border-radius: 3px;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card-body p {
+    font-size: .8rem;
+}
+
+.imagen-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.imagen-main .imagen-paisaje {
+    width: 100%;
+}
+
+.imagen-main .imagen-paisaje img {
+    width: 100%;
+}
+
+.imagen-main .imagen-text {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #3c3c3c;
+    color: white;
+    border-left: 1px solid white;
+}
+.imagen-main .imagen-text h4{
+    font-size: 2rem;
+}
+
+.imagen-main .imagen-text button{
+    color: white;
+    border: 1px solid white;
+    background: none;
+    border-radius: 5px;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer  .footer__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer p{
+    margin: 0 auto;
+}
+.footer .footer__form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .footer__form .footer__form__data-usu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+.footer .footer__form .footer__form__data-usu input{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer .footer__form textarea{
+    width: 100%;
+    margin-top: 10px;
+
+}
+.footer p{
+    font-size: .8rem;
+}
+.footer .footer__form input[type="submit"]{
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(91, 202, 61);
+    border: none;
+}
+.footer .otros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(12, 38, 67, 0.73);
+    color: white;
+}
+.footer .otros ul{
+    padding: 10px;
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .otros ul li{
+    padding: 20px;
+
+}
+
+
+
+
+@media(min-width: 600px) {
+
+    .navbar {
+        position: fixed;
+        padding: 1 50rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 6rem;
+        height: 3rem;
+    }
+
+    header .carousel .carousel-inner {
+        padding-top: 0;
+    }
+
+    .capa .capa-contenido {
+        top: 8rem;
+        width: 50%;
+
+    }
+
+    .capa .capa-contenido .text h2 {
+        font-size: 2rem;
+    }
+
+    .capa .capa-contenido .text p {
+        font-size: .8rem;
+    }
+
+    .capa .capa-contenido .botones {
+        height: 1.5rem;
+
+    }
+
+    .capa .capa-contenido .botones button {
+        font-size: .8rem;
+        border: 1px solid white;
+        color: white;
+        margin: 0 2px;
+        border-radius: 4px;
+
+    }
+
+    .capa .capa-contenido .botones button:nth-child(2) {
+        background-color: green;
+        border: 1px solid green;
+    }
+
+    /* Main */
+    .main .main__texto p, .footer .footer__texto p  {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .main .main__texto h1, .footer .footer__texto h2 {
+        font-size: 2rem;
+    }
+
+    /* footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer  .footer__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer p{
+        margin: 0 auto;
+    }
+    .footer .footer__form {
+        width: 60%;
+        margin-top: 10px;
+    }
+    
+    .footer .footer__form .footer__form__data-usu{
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer .footer__form .footer__form__data-usu input{
+        width: 49%;
+    }
+    
+    .footer .footer__form textarea{
+        width: 100%;
+    }
+    .footer .footer__form p{
+    
+    }
+    .footer .footer__form input{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 721px) {
+    .main .main__oradores {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Main */
+    .imagen-main {
+        flex-direction: row;
+    }
+    
+    .imagen-main .imagen-paisaje {
+        width: 50%;
+    }
+    
+    .imagen-main .imagen-paisaje img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imagen-main .imagen-text {
+        width: 50%;
+
+    }
+
+    /* Footer */
+    .footer .otros ul li{
+        padding: 5px;
+    }
+}
+
+@media (min-width: 900px) {
+    .logo img {
+        width: 7rem;
+        height: 4rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    header .carousel .carousel-inner .carousel-item img {
+        height: 95vh;
+        background: rgba(5, 7, 12, 0.75);
+        z-index: 100;
+    }
+
+    .capa .capa-contenido {
+        width: 40%;
+        top: 20rem;
+        right: 7rem;
+    }
+
+    .capa .capa-contenido .text h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    .capa .capa-contenido .text p {
+        font-size: 1.2rem;
+    }
+
+    .capa .capa-contenido .botones button {
+        padding: .7rem 1rem;
+        font-size: 1rem;
+    }
+
+    .main .main__oradores {
+        grid-template-columns: repeat(3, 1fr);
+        width: 65%;
+    }
+
+    /* footer */
+    
+    .footer .otros ul{
+        flex-direction: row;
+    }
+}
