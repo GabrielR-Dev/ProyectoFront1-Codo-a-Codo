@@ -139,6 +139,7 @@ header .carousel .carousel-inner .capa {
 }
 
 .inf p {
+    color: white;
     display: inline;
     font-size: .7rem;
     font-weight: bold;
