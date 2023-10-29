@@ -260,7 +260,27 @@ header .carousel .carousel-inner .capa {
 
 }
 
-
+.footer .footer__compra-tickets{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer .footer__compra-tickets .ticket{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    padding: 1rem;
+}
+.footer .footer__compra-tickets .ticket:nth-child(2){
+    border: 1px solid green;
+}
+.footer .footer__compra-tickets .ticket:nth-child(3){
+    border: 1px solid rgb(181, 151, 4);
+}
 
 
 @media(min-width: 600px) {
@@ -365,6 +385,11 @@ header .carousel .carousel-inner .capa {
     .footer .footer__form input{
         width: 50%;
     }
+
+    .footer .footer__compra-tickets{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    
 
 }
 
