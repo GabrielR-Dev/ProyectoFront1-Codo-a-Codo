@@ -38,16 +38,16 @@
               <a class="nav-link" href="#">La Conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#lugar">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link" href="#quieroserorador">Conviértete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Comprar tickets</a>
+              <a class="nav-link active" href="#comprartikets">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -88,7 +88,7 @@
       <p>CONOCE A LOS</p>
       <h1>ORADORES</h1>
     </div>
-    <div class="main__oradores">
+    <div class="main__oradores" id="oradores">
       <div class="card" style="width: 18rem;">
         <img src="image/steve.jpg" class="card-img-top" alt="Steve Jobs">
         <div class="card-body">
@@ -136,7 +136,7 @@
       </div>
     </div>
 
-    <div class="imagen-main">
+    <div class="imagen-main" id="lugar">
       <div class="imagen-paisaje">
         <img src="image/honolulu.jpg" alt="honolulu">
       </div>
@@ -154,7 +154,7 @@
   </main>
 
 
-  <footer class="footer">
+  <footer class="footer" id="quieroserorador">
 
     <div class="footer__texto">
       <p>CONVIÉRTETE EN UN</p>
@@ -172,7 +172,7 @@
       <input type="submit" value="Enviar">
     </form>
 
-    <div class="footer__compra-tickets">
+    <div class="footer__compra-tickets" id="comprartikets">
 
       <div class="ticket" id="t-estudiante">
         <h4>Estudiante</h4>
@@ -180,6 +180,7 @@
         <p>80%</p>
         <p>*presentar documentación</p>
       </div>
+
       <div class="ticket" id="t-trainee">
         <h4>Trinee</h4>
         <p><b>Tiene descuento</b></p>
@@ -198,28 +199,35 @@
       <p>VENTA</p>
       <h2>VALOR DE TICKET $200</h2>
 
-      <form action="">
+      <form method="post" action="/js/app.js" class="form-tickets">
+
         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
         <input type="text" name="apellido" id="apellido" placeholder="Apellido">
         <input type="email" name="email" id="email" placeholder="Email">
-        <label for="cantidad">Cantidad</label>
-        <label for="cantidad">Categoria</label>
-        <input type="number" placeholder="Cantidad">
-        <select name="categoria" id="categoria">
-          <option value="estudiante">Estudiante</option>
-          <option value="trainee">Trainee</option>
-          <option value="Junior">Junior</option>
-        </select>
+
+        <div>
+          <div class="cant-categ">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" placeholder="Cantidad" id="cantidad">
+          </div>
+          <div class="cant-categ">
+            <label>Categoria</label>
+            <select name="categoria" id="categoria">
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="Junior">Junior</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="total-a-pagar">
+          <p>Total a pagar: $</p>
+        </div>
+        <div class="botones">
+          <button>Borrar</button>
+          <input type="submit" value="Resumen">
+        </div>
       </form>
-      <div class="total a pagar">
-        <p>Total a pagar: $</p>
-      </div>
-
-      <div>
-        <button>Borrar</button>
-        <button>Resumen</button>
-      </div>
-
     </div>
 
 

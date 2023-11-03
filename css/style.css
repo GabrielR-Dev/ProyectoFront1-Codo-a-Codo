@@ -207,7 +207,7 @@ header .carousel .carousel-inner .capa {
     margin: 0 auto;
 }
 .footer .footer__form {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
 }
 
@@ -220,6 +220,7 @@ header .carousel .carousel-inner .capa {
 .footer .footer__form .footer__form__data-usu input{
     border-radius: 5px;
     width: 100%;
+    margin: 3px;
 }
 
 .footer .footer__form textarea{
@@ -263,6 +264,7 @@ header .carousel .carousel-inner .capa {
 .footer .footer__compra-tickets{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 25px;
 }
 .footer .footer__compra-tickets .ticket{
     border: 1px solid blue;
@@ -281,6 +283,62 @@ header .carousel .carousel-inner .capa {
 .footer .footer__compra-tickets .ticket:nth-child(3){
     border: 1px solid rgb(181, 151, 4);
 }
+.footer .formulario-tickets {
+    text-align: center;
+    width: 60%;
+}
+.footer .formulario-tickets .form-tickets input{
+    width: 90%;
+    margin: 10px;
+    font-size: .8rem;
+    padding: 5px 10px;
+    
+}
+.footer .formulario-tickets .form-tickets input[type=number]::-webkit-inner-spin-button, 
+.footer .formulario-tickets .form-tickets input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.footer .formulario-tickets .form-tickets input[name = "email"]{
+    width: 89%;
+}
+.footer .formulario-tickets .form-tickets label{
+    align-self: self-start;
+}
+.footer .formulario-tickets .form-tickets select{
+    width: 90%;
+    margin: 10px;
+    font-size: .8rem;
+    padding: 5px 10px;
+}
+.footer .formulario-tickets .total-a-pagar{
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(185, 228, 251);
+    border: 1px solid rgb(157, 221, 255);
+    text-align: start;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px;
+    color: rgb(0, 89, 137);
+    margin-top: 25px;
+}
+
+.footer .formulario-tickets .formulario-tickets form .botones {
+    display: flex;
+    flex-direction: column;
+}
+.footer .formulario-tickets form .botones button , .footer .formulario-tickets form .botones input[type = "submit"]{
+    margin: 10px auto 0;
+    width: 90%;
+    border: none;
+    background-color: rgb(131, 215, 4);
+    color: white;
+    font-size: .8rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+.footer .formulario-tickets form .botones input[type = "submit"]{ margin-bottom: 10px;}
 
 
 @media(min-width: 600px) {
@@ -470,4 +528,44 @@ header .carousel .carousel-inner .capa {
     .footer .otros ul{
         flex-direction: row;
     }
+
+
+
+    .footer .formulario-tickets .form-tickets input{
+        width: 43%;
+        margin: 10px;
+        font-size: .8rem;
+        padding: 5px 10px;
+        
+    }
+
+
+    .footer .formulario-tickets .form-tickets div{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .formulario-tickets .form-tickets .cant-categ{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer .formulario-tickets .form-tickets .cant-categ input{
+        width: 95%;
+    }
+
+    .footer .formulario-tickets .form-tickets select{
+        width: 95%;
+        margin: 10px;
+        font-size: .8rem;
+        padding: 6px 10px;
+    }
+
+    
+    .footer .formulario-tickets form .botones {
+        flex-direction: row;
+        gap: 10px;
+    }
+
 }
