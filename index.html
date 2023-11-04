@@ -199,29 +199,29 @@
       <p>VENTA</p>
       <h2>VALOR DE TICKET $200</h2>
 
-      <form method="post" action="/js/app.js" class="form-tickets">
+      <form method="post" class="form-tickets">
 
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
 
         <div>
           <div class="cant-categ">
             <label for="cantidad">Cantidad</label>
-            <input type="number" placeholder="Cantidad" id="cantidad">
+            <input type="number" placeholder="Cantidad" name="cantidad" id="cantidad" value=1 required>
           </div>
           <div class="cant-categ">
             <label>Categoria</label>
             <select name="categoria" id="categoria">
               <option value="estudiante">Estudiante</option>
               <option value="trainee">Trainee</option>
-              <option value="Junior">Junior</option>
+              <option value="junior">Junior</option>
             </select>
           </div>
         </div>
 
         <div class="total-a-pagar">
-          <p>Total a pagar: $</p>
+          <p id="pagar">Total a pagar: $</p>
         </div>
         <div class="botones">
           <button>Borrar</button>
