@@ -54,6 +54,7 @@ header .carousel .carousel-inner .capa {
     right: 1rem;
     top: .5rem;
     z-index: 100;
+    text-align: right;
 }
 
 .capa .capa-contenido .text {

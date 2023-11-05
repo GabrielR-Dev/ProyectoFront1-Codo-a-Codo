@@ -24,7 +24,7 @@ document.addEventListener("submit", (e) => {
     });
 
     let precioConDescuento = cantidad*(200-(200 * descuento / 100));
-    let pagar = document.getElementById("pagar").textContent = "Total a pagar: $" + precioConDescuento;
+    document.getElementById("pagar").textContent = "Total a pagar: $" + precioConDescuento;
 
 
 })
